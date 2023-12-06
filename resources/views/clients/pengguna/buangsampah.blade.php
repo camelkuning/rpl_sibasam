@@ -42,10 +42,10 @@
 
                             <div class="mb-3" id="jam">
                                 <label for="jam">Tgl/Jam</label>
-                                <input type="datetime-local" name="jam" class="border border-dark form-control">
+                                <input type="datetime-local" name="jam" class="border border-dark  form-control">
                             </div>
 
-                            <button type="submit" class="btn btn-lg btn-success w-25 text-uppercase"
+                            <button type="submit" class="btn btn-md btn-success w-20 text-uppercase"
                                 id="btn">Pesan</button>
                         </form>
                     </div>
