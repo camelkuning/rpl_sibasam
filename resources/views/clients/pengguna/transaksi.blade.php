@@ -43,8 +43,9 @@
                                 <td> <span class="badge rounded-pill bg-success">Sudah</span> </td>
 
                                 <td>
-                                    <a class="btn btn-primary" href="{{ route('pengguna.transaksi.show', $data->id) }}"
-                                        role="button">Link</a>
+                                    
+                                    <a class="btn btn-warning shadow-md btn-sm " href="{{ route('pengguna.transaksi.show', $data->id) }}"role="button ">
+                                        <i class="bi bi-wallet2 "></i>Bayar Disini</a>
                                 </td>
                                 @endif
                             </tr>
