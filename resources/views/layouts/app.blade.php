@@ -33,8 +33,6 @@
 
     @stack('js')
 
-
-
 </body>
 
 </html>

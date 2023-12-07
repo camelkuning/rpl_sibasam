@@ -93,7 +93,7 @@ class AuthController extends Controller
         }
 
         return redirect(RouteServiceProvider::HOME)->with([
-            'success' => 'Selamat Datang ' .Auth::user()->username,
+            'success' => 'Anda berhasil masuk',
         ]);
     }
 

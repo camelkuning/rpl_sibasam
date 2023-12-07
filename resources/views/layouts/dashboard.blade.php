@@ -60,8 +60,6 @@
         @yield('content')
     </div>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrqEdaadXnnDWGx7Lr7WDJTzewjHZSItQ&callback=initMap"></script>
-
     <script src="{{ asset('assets/js') }}/jquery.min.js"></script>
     <script src="{{ asset('assets/js') }}/popper.min.js"></script>
     <script src="{{ asset('assets/js') }}/bootstrap.min.js"></script>

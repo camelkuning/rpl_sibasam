@@ -53,8 +53,8 @@
 <div class="container" style="margin-top: 20px;">
     <div class="row">
         <div class="col-md-8">
-            <div class="card border border-dark">
-                <div class="card-body border border-dark">
+            <div class="card">
+                <div class="card-body">
                     @if (session('status'))
                     <div class="alert alert-success">
                         {{ session('status') }}
@@ -64,35 +64,35 @@
                         <div class="mb-3" id="username">
                             <label for="BeratSampah">Berat Sampah (kg)</label>
                             <input name="BeratSampah" type="text"
-                                class="border border-dark form-control @error('BeratSampah') is-invalid @enderror"
+                                class="form-control @error('BeratSampah') is-invalid @enderror"
                                 value="{{ $data->berat_sampah }}" disabled>
                         </div>
 
                         <div class="mb-3" id="username">
                             <label for="BeratSampah">Jenis Sampah</label>
                             <input name="BeratSampah" type="text"
-                                class="border border-dark form-control @error('BeratSampah') is-invalid @enderror"
+                                class="form-control @error('BeratSampah') is-invalid @enderror"
                                 value="{{ $data->jenis_sampah }}" disabled>
                         </div>
 
                         <div class="mb-3" id="username">
                             <label for="BeratSampah">Lokasi Pembuangan</label>
                             <input name="BeratSampah" type="text"
-                                class="border border-dark form-control @error('BeratSampah') is-invalid @enderror"
+                                class="form-control @error('BeratSampah') is-invalid @enderror"
                                 value="{{ $data->lokasi_pembuangan }}" disabled>
                         </div>
 
                         <div class="mb-3" id="username">
                             <label for="BeratSampah">Status</label>
                             <input name="BeratSampah" type="text"
-                                class="border border-dark form-control @error('BeratSampah') is-invalid @enderror"
+                                class="form-control @error('BeratSampah') is-invalid @enderror"
                                 value="{{ $data->status }}" disabled>
                         </div>
 
                         <div class="mb-3" id="username">
                             <label for="BeratSampah">Jam</label>
                             <input name="BeratSampah" type="datetime"
-                                class="border border-dark form-control @error('BeratSampah') is-invalid @enderror" value="{{ $data->jam }}"
+                                class="form-control @error('BeratSampah') is-invalid @enderror" value="{{ $data->jam }}"
                                 disabled>
                         </div>
 
@@ -105,8 +105,8 @@
             @if ($data->status_terima == "1" && $data->status == "belum")
             <div id="paypal-button-container"></div>
             @elseif ($data->status == "sudah")
-            <a class="btn btn-warning shadow-md" href="{{ route('pay.invoice', $data->transaksi->payment_gateway_id) }}"
-                role="button">Cetak Invoice</a>
+            <a class="btn btn-primary" href="{{ route('pay.invoice', $data->transaksi->payment_gateway_id) }}"
+                role="button">Link</a>
             @endif
         </div>
     </div>
