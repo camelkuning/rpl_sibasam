@@ -19,13 +19,13 @@
 
                             <div class="mb-3" id="username">
                                 <label  for="BeratSampah">Berat Sampah (kg)</label>
-                                <input name="BeratSampah" type="text"
+                                <input name="BeratSampah" type="number"
                                     class="form-control @error('BeratSampah') is-invalid @enderror" placeholder="" required>
                             </div>
 
                             <div class="mb-3" id="JenisSampah">
                                 <label for="JenisSampah">Jenis Sampah</label>
-                                <select class="form-select" name="JenisSampah" id="JenisSampah">
+                                <select class="form-control" name="JenisSampah" id="JenisSampah">
                                     <option disable value="Organik" selected="selected">Sampah (Organik)</option>
                                     <option value="Anorganik">Sampah (Anorganik)</option>
                                 </select>
@@ -33,7 +33,7 @@
 
                             <div class="mb-3" id="lokasi">
                                 <label for="lokasi">Lokasi Pembuangan</label>
-                                <select class="form-select" name="lokasi" id="lokasi">
+                                <select class="form-control" name="lokasi" id="lokasi">
                                     <option selected="selected" value="Lokasi1">Lokasi Sampah 1</option>
                                     <option value="Lokasi2">Lokasi Sampah 2</option>
                                     <option value="Lokasi3">Lokasi Sampah 3</option>

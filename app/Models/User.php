@@ -23,6 +23,8 @@ class User extends Authenticatable
         'password',
         'role',
         'alamat',
+        'LanggananType',
+        'LanggananExpire',
     ];
 
     /**
@@ -41,6 +43,7 @@ class User extends Authenticatable
      * @var array<string, string>
      */
     protected $casts = [
+        'LanggananExpire'   => 'datetime',
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];

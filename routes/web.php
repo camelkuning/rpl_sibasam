@@ -71,8 +71,11 @@ Route::group([
 
                 Route::get('transaksi', 'transaksi')->name('transaksi');
                 Route::get('transaksi/{id}', 'show')->name('transaksi.show');
-                //tes
 
+                Route::get('langganan', 'langganan')->name('langganan');
+                Route::get('langganan/{id}', 'showLangganan')->name('langganan.show');
+                Route::post('langganan-create', 'langganan_create')->name('langganan.create');
+                Route::get('langganan-capture', 'langganan_capture')->name('langganan.capture');
             });
         });
 
