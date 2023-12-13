@@ -116,13 +116,13 @@ class PenggunaController extends Controller
      */
     public function langganan(Request $request)
     {
-        // $data = Langganan::all();
+        $data = Langganan::all();
 
-        if (Auth::user()->LanggananExpire->isPast() || Auth::user()->LanggananType > 0) {
-            $data = Langganan::all();
-        } else {
-            $data = Langganan::where('id', Auth::user()->LanggananType)->first();
-        }
+        // if (Auth::user()->LanggananExpire->isPast() || Auth::user()->LanggananType > 0) {
+        //     $data = Langganan::all();
+        // } else {
+        //     $data = Langganan::where('id', Auth::user()->LanggananType)->first();
+        // }
         
         // $data = Langganan::where('id', Auth::user()->LanggananType)->first();
 
