@@ -116,12 +116,19 @@ class PenggunaController extends Controller
      */
     public function langganan(Request $request)
     {
-        if (Auth::user()->LanggananExpire->isPast()) {
+        // $data = Langganan::all();
+
+        if (Auth::user()->LanggananExpire->isPast() || Auth::user()->LanggananType > 0) {
             $data = Langganan::all();
         } else {
             $data = Langganan::where('id', Auth::user()->LanggananType)->first();
         }
+        
+        // $data = Langganan::where('id', Auth::user()->LanggananType)->first();
 
+        
+        // dd($data);
+        
         return view('clients.pengguna.langganan', [
             config(['app.title' => "Langganan"]),
             'datas' => $data,

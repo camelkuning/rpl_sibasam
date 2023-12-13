@@ -41,7 +41,7 @@
                         <div class="card-body">
                             <div class="mb-3" id="langganan">
                                 <label for="langganan">Langganan</label>
-                                <input name="langganan" type="text" class="form-control" value="{{ $datas->name }}"
+                                <input name="langganan" type="text" class="form-control" value="{{ Auth::user()->langganan->name }}"
                                     readonly>
                             </div>
 
