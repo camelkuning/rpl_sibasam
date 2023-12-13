@@ -100,13 +100,15 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-md-4">
                 @if ($data->status_terima == '1' && $data->status == 'belum')
                     <div id="paypal-button-container"></div>
                 @elseif ($data->status == 'sudah')
-                    <a class="btn btn-warning" href="{{ route('pay.invoice', $data->transaksi->payment_gateway_id) }}"
-                        role="button">Download Bukti</a>
+                    <a class="btn btn-warning " href="{{ route('pay.invoice', $data->transaksi->payment_gateway_id) }}"
+                        role="button">
+                        <i class="bi bi-file-earmark-pdf"></i>
+                        Download Bukti
+                    </a>
                 @endif
             </div>
         </div>

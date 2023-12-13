@@ -29,7 +29,7 @@
                                             Dengan berlangganan Anda dapat membuang sampah sepuasnya...
                                         </p>
                                         <a href="{{ route('pengguna.langganan.show', $data->id) }}" class="btn btn-warning">
-                                            <i class="icon-cart-add mr-2"></i>Berlangganan  
+                                            <i class="bi bi-cash-coin mr-2"></i>Berlangganan  
                                         </a>
                                     </div>
                                 </div>
